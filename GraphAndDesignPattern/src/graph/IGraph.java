@@ -26,7 +26,9 @@ public interface IGraph {
 	 */
 	public List<Node> getAdjNodes(Node _n);
         
-        public Iterator<Node> createIterator(Node noeudDeDepart);
+    public Iterator<Node> createIteratorProfodeur(Node noeudDeDepart);
+    
+    public Iterator<Node> createIteratorLargeur(Node noeudDeDepart);
 	
 	
 }

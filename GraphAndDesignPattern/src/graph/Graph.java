@@ -60,7 +60,7 @@ public class Graph implements IDirectedGraph {
         }
     }
 
-    
+    @Override
     public List<Node> getAdjNodes(Node _n) {
         List<Node> res = new ArrayList<>();
         for (Arc a : arcs){
@@ -72,8 +72,13 @@ public class Graph implements IDirectedGraph {
     }
 
     @Override
-    public Iterator<Node> createIterator(Node noeudDeDepart) {
-        return new NodeIterator(this, noeudDeDepart);
+    public Iterator<Node> createIteratorProfodeur(Node noeudDeDepart) {
+        return new NodeIteratorProfondeur(this, noeudDeDepart);
     }
+
+	@Override
+	public Iterator<Node> createIteratorLargeur(Node noeudDeDepart) {
+		return new NodeIteratorLargeur(this, noeudDeDepart);
+	}
 
 }
