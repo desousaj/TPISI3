@@ -11,9 +11,23 @@ public class ExpressionArithmetique {
 		return racine;
 	}
 
-
-
-
-
+	public void afficherPostfixe(){
+		racine.accept(new VisiteurAffichePostfixe());
+	}
+	
+	public int calcule(){
+		VisiteurCalcul v = new VisiteurCalcul();
+		racine.accept(v);
+		return v.getTotal();
+	}
+	
+	
+	public int calculeHauteur(){
+		VisiteurCalcul v = new VisiteurCalcul();
+		racine.accept(v);
+		return v.getTotal();
+	}
+	
+	
 	
 }

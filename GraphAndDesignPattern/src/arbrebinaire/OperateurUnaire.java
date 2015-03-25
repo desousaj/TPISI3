@@ -15,6 +15,4 @@ public abstract class OperateurUnaire implements Noeud{
 		return opG;
 	}
 
-
-
 }

@@ -15,9 +15,9 @@ public class MainArbreBinaire {
 	//	exp.afficherInfixe();
 	
 		System.out.println("\n postfixe:");
-	//	exp.afficherPostfixe();
-	//	System.out.println("\n calcul: " + exp.calcule());
-	//	System.out.println("\n calculH: " + exp.calculeHauteur());
+		exp.afficherPostfixe();
+		System.out.println("\n calcul: " + exp.calcule());
+		System.out.println("\n calculH: " + exp.calculeHauteur());
 		
 		
 
